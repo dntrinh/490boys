@@ -6,6 +6,9 @@ import {
   View,
 } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
+import { ApolloProvider } from '@apollo/client';
+
+import { client } from './apollo';
 
 import LoginScreen from './src/screens/LoginScreen/LoginScreen';
 import SignUpScreen from './src/screens/SignUpScreen/SignUpScreen';
@@ -16,9 +19,11 @@ import LoginStackScreen from './src/navigation/LoginStackScreen';
 const App = () => {
 
   return (
-    <NavigationContainer>
-      <LoginStackScreen />
-    </NavigationContainer>
+    <ApolloProvider client={client}>
+      <NavigationContainer>
+        <LoginStackScreen />
+      </NavigationContainer>
+    </ApolloProvider>
   );
 };
 
