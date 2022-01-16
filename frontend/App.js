@@ -9,6 +9,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import LoginScreen from './src/screens/LoginScreen/LoginScreen';
 import SignUpScreen from './src/screens/SignUpScreen/SignUpScreen';
+import ProfileScreen from './src/screens/ProfileScreen/ProfileScreen';
 
 import LoginStackScreen from './src/navigation/LoginStackScreen';
 
