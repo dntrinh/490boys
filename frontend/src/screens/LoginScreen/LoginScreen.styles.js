@@ -35,8 +35,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         alignSelf: 'center',
         color: 'blue',
-    }
-
+    },
 });
 
 export default styles;

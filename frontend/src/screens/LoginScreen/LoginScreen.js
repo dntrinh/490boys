@@ -8,17 +8,17 @@ import {
 
 import styles from './LoginScreen.styles';
 
-const LoginScreen = () => {
+const LoginScreen = ({ navigation }) => {
     return (
         <View>
             <Text style={styles.title}>MusicShare</Text>
-            <TextInput style={styles.username} placeholder="Username"/>
-            <TextInput style={styles.password} placeholder="Password"/>
-            <Pressable 
-            style={styles.signup}
-            onPress={() => console.log('pressed')}>
+            <TextInput style={styles.username} placeholder="Username" />
+            <TextInput style={styles.password} placeholder="Password" />
+            <Pressable
+                style={styles.signup}
+                onPress={() => navigation.navigate('Signup')}>
                 <Text style={styles.signupText}>Sign Up</Text>
-                </Pressable>
+            </Pressable>
         </View>
     );
 };
