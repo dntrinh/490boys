@@ -20,8 +20,18 @@ const LoginScreen = ({ navigation }) => {
     return (
         <View>
             <Text style={styles.title}>MusicShare</Text>
-            <TextInput style={styles.username} placeholder="Username" />
-            <TextInput style={styles.password} placeholder="Password" />
+            <TextInput
+                style={styles.username}
+                placeholder="Username"
+                value={email}
+                onChangeText={email => setEmail(email)}
+            />
+            <TextInput
+                style={styles.password}
+                placeholder="Password"
+                value={password}
+                onChangeText={password => setPassword(password)}
+            />
             <Pressable
                 style={styles.signup}
                 onPress={() => navigation.navigate('Signup')}>
