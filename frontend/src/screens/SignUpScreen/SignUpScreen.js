@@ -19,7 +19,7 @@ const SignUpScreen = ({navigation}) => {
             <TextInput style={styles.confirmPassword} placeholder="Confirm Password" />
             <Pressable
                 style={styles.signup}
-                onPress={() => navigation.navigate('Profile')}>
+                onPress={() => navigation.navigate('Home')}>
                 <Text style={styles.signupText}>Sign Up</Text>
             </Pressable>
         </View>

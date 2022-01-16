@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
         fontSize: 30,
         alignSelf: 'center',
         color: 'black',
-        marginTop: 100,
+        marginTop: 50,
         borderColor: 'black',
         borderWidth: 1,
         width: '80%',
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     signup: {
         alignSelf: 'center',
         color: 'blue',
-        marginTop: 50,
+        marginTop: 20,
 
     },
     signupText: {
@@ -36,6 +36,22 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         color: 'blue',
     },
+
+    login: {
+        alignSelf: 'center',
+        color: 'black',
+        marginTop: 50,
+        borderWidth: 1,
+        backgroundColor: '#33C1FF',
+        padding: 5,
+    },
+
+    loginText: {
+        fontSize: 30,
+        alignSelf: 'center',
+        color: 'black',
+    },
+
 });
 
 export default styles;

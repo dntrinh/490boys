@@ -29,6 +29,11 @@ const LoginScreen = ({ navigation }) => {
                 onChangeText={password => setPassword(password)}
             />
             <Pressable
+                style={styles.login}
+                onPress={() => navigation.navigate('Home')}>
+                <Text style={styles.loginText}>Log In</Text>
+            </Pressable>
+            <Pressable
                 style={styles.signup}
                 onPress={() => navigation.navigate('Signup')}>
                 <Text style={styles.signupText}>Sign Up</Text>

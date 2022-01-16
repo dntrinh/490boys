@@ -16,8 +16,8 @@ const LoginStackScreen = () => {
         <LoginStack.Navigator
             initialRoutename={'Login'}
         >
-            <LoginStack.Screen name={'Login'} component={LoginScreen} />
-            <LoginStack.Screen name={'Signup'} component={SignUpScreen} />
+            <LoginStack.Screen name={'Login'} component={LoginScreen} options={{ headerShown: false }} />
+            <LoginStack.Screen name={'Signup'} component={SignUpScreen} options={{ headerShown: false }} />
             <LoginStack.Screen name={'Profile'} component={ProfileScreen} />
         </LoginStack.Navigator>
     );

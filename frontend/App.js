@@ -4,8 +4,10 @@ import {
   StyleSheet,
   Text,
   View,
+  Pressable
 } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
+import { ApolloProvider } from '@apollo/client';
 
 import { client } from './apollo';
 
@@ -18,9 +20,14 @@ import LoginStackScreen from './src/navigation/LoginStackScreen';
 const App = () => {
 
   return (
-    <NavigationContainer>
-      <LoginStackScreen />
-    </NavigationContainer>
+    <ApolloProvider client={client}>
+      <NavigationContainer>
+        <LoginStackScreen />
+        <Pressable style={{ borderWidth: 1 }} onPress={() => console.log('press')}>
+          <Text> LoginIn</Text>
+        </Pressable>
+      </NavigationContainer>
+    </ApolloProvider>
   );
 };
 
