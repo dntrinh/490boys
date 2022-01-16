@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     <View>
-      <Text>490Boys</Text>
+
     </View>
   );
 };
