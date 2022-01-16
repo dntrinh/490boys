@@ -6,7 +6,6 @@ import {
   View,
 } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { ApolloProvider } from '@apollo/client';
 
 import { client } from './apollo';
 
@@ -19,11 +18,9 @@ import LoginStackScreen from './src/navigation/LoginStackScreen';
 const App = () => {
 
   return (
-    <ApolloProvider client={client}>
-      <NavigationContainer>
-        <LoginStackScreen />
-      </NavigationContainer>
-    </ApolloProvider>
+    <NavigationContainer>
+      <LoginStackScreen />
+    </NavigationContainer>
   );
 };
 
